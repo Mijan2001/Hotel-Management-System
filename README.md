@@ -1,2 +1,2 @@
 
-![frontend-image](./frontend-img.png)
+![frontend-image](.../frontend-img.png)
