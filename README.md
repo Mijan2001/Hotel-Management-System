@@ -1,2 +1,3 @@
-frontend run : npm run dev
+frontend run : npm run dev; 
 backend run : npm run start
+
