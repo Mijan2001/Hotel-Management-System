@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 import axios from "axios";
 
 const Login = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
   const [loginData, setLoginData] = useState({
     email: "",
     password: "",
@@ -23,7 +25,7 @@ const Login = () => {
       );
       if (response) {
         alert("Login Successfully");
-        history.push("/");
+        navigate("/");
       }
       console.log(response.data); // Handle success response
     } catch (error) {

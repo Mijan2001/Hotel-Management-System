@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Link, useHistory } from "react-router-dom";
-
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const Signup = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
   const [signupData, setSignupData] = useState({
     name: "",
     email: "",
@@ -25,7 +25,7 @@ const Signup = () => {
       if (response) {
         alert("Register Successfully");
       }
-      history.push("/login");
+      navigate("/login");
       console.log(response.data); // Handle success response or redirection
     } catch (error) {
       console.error(error); // Handle error
