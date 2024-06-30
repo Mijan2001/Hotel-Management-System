@@ -11,8 +11,8 @@ Project Basic Structure.....................
 #backend : npm run start
 #frontend : npm run dev
 
-![front-page](../project-photos/frontend-img.PNG)
-![front-page](../project-photos/signup.PNG)
-![front-page](../project-photos/login.PNG)
-![front-page](../project-photos/addroom.PNG)
-![front-page](../project-photos/view-booking.PNG)
+![front-page](./project-photos/frontend-img.PNG)
+![front-page](./project-photos/signup.PNG)
+![front-page](./project-photos/login.PNG)
+![front-page](./project-photos/addroom.PNG)
+![front-page](./project-photos/view-booking.PNG)
