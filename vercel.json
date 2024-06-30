@@ -1,27 +1,27 @@
 {
   "version": 2,
-  "name": "my-mern-project",
+  "name": "my-project",
   "builds": [
     {
-      "src": "client/package.json",
+      "src": "frontend/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "client/build"
+        "distDir": "frontend/dist"
       }
     },
     {
-      "src": "server/api/**/*.js",
+      "src": "backend/package.json",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/server/api/$1"
+      "dest": "/backend/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "/client/build/$1"
+      "dest": "/frontend/dist/$1"
     }
   ]
 }
