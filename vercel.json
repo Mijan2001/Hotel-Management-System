@@ -4,9 +4,9 @@
   "builds": [
     {
       "src": "frontend/package.json",
-      "use": "@vercel/index.html",
+      "use": "@vercel/static-build",
       "config": {
-        "distDir": "frontend/dist"
+        "distDir": "frontend/index.html"
       }
     },
     {
